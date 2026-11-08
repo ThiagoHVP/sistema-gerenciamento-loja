@@ -2,13 +2,13 @@
 
 Sistema de gerenciamento de loja desenvolvido em Portugol, utilizando o VisualG, com foco na aplicação prática de conceitos fundamentais de lógica de programação.
 
-O projeto implementa funcionalidades de cadastro, consulta, alteração e exclusão de produtos e clientes, além do controle de movimentações de estoque e do registro e gerenciamento de vendas, por meio de um menu interativo.
+O projeto implementa funcionalidades de cadastro, consulta, alteração e exclusão de produtos e clientes, além do controle de movimentações de estoque, do registro e gerenciamento de vendas e da geração de relatórios gerenciais, por meio de um menu interativo.
 
 ---
 
 ## 🎯 Objetivo
 
-Desenvolver um sistema de gerenciamento de loja capaz de organizar informações de produtos e clientes, controlar suas quantidades em estoque e registrar vendas, aplicando estruturas fundamentais da lógica de programação na construção de uma aplicação funcional.
+Desenvolver um sistema de gerenciamento de loja capaz de organizar informações de produtos e clientes, controlar suas quantidades em estoque, registrar vendas e gerar relatórios gerenciais, aplicando estruturas fundamentais da lógica de programação na construção de uma aplicação funcional.
 
 ---
 
@@ -50,6 +50,14 @@ Desenvolver um sistema de gerenciamento de loja capaz de organizar informações
 | 15 | Buscar venda | Localiza uma venda por meio de seu código e apresenta suas respectivas informações. |
 | 16 | Total de vendas | Calcula e exibe o valor acumulado de todas as vendas registradas. |
 
+### Relatórios e análises gerenciais
+
+| Opção | Funcionalidade | Descrição |
+|:---:|---|---|
+| 17 | Relatório de estoque | Exibe os produtos cadastrados, suas respectivas quantidades, valores individuais em estoque e o valor total do estoque. |
+| 18 | Produto mais vendido | Identifica o produto com a maior quantidade de unidades vendidas, considerando o histórico de vendas registrado. |
+| 19 | Cliente que mais comprou | Identifica o cliente com a maior quantidade de unidades adquiridas, considerando o histórico de vendas registrado. |
+
 ---
 
 ## 🛠️ Tecnologias utilizadas
@@ -82,6 +90,11 @@ O desenvolvimento utiliza diversos conceitos fundamentais da programação:
 - Atualização de estoque integrada ao registro de vendas.
 - Reorganização de registros em vetores após exclusões.
 - Confirmação de operações antes de alterações definitivas.
+- Estruturas de repetição aninhadas para cruzamento de informações.
+- Acumulação e comparação de quantidades e valores.
+- Identificação de maiores valores por meio de variáveis de controle.
+- Processamento e análise de registros de vendas.
+- Geração de relatórios com informações armazenadas nos vetores.
 
 ---
 
@@ -120,7 +133,7 @@ O sistema utiliza vetores para armazenar as informações dos produtos, clientes
 
 Os dados são organizados por índices, permitindo localizar, consultar e atualizar os registros dos produtos, clientes e vendas.
 
-As informações armazenadas permitem relacionar cada venda ao respectivo cliente e produto, além de preservar o preço unitário e a quantidade comercializada para consultas e cálculos posteriores.
+As informações armazenadas permitem relacionar cada venda ao respectivo cliente e produto, além de preservar o preço unitário e a quantidade comercializada para consultas, cálculos e análises posteriores.
 
 ---
 
@@ -174,6 +187,17 @@ O sistema possui mecanismos de validação para preservar a consistência das in
 - Atualização do estoque somente após a confirmação da venda.
 - Armazenamento das informações necessárias para consultas posteriores.
 
+### Relatórios e análises gerenciais
+
+- Verificação da existência de produtos antes da geração do relatório de estoque.
+- Verificação da existência de vendas antes das análises de desempenho.
+- Cálculo individual do valor dos produtos disponíveis em estoque.
+- Acumulação do valor total do estoque.
+- Identificação do produto com maior quantidade de unidades vendidas.
+- Identificação do cliente com maior quantidade de unidades adquiridas.
+- Verificação de clientes que ainda não realizaram compras.
+- Utilização dos códigos de identificação para relacionar vendas aos respectivos produtos e clientes.
+
 ---
 
 ## ▶️ Como executar
@@ -188,7 +212,7 @@ O sistema possui mecanismos de validação para preservar a consistência das in
 
 ## 📌 Status do desenvolvimento
 
-**Versão documental 3 — Funcionalidades de gerenciamento de produtos, controle de estoque, gerenciamento de clientes e controle de vendas.**
+**Versão documental 4 — Funcionalidades de gerenciamento de produtos, controle de estoque, gerenciamento de clientes, controle de vendas e relatórios gerenciais.**
 
 O projeto está sendo documentado e publicado gradualmente no GitHub, acompanhando a implementação das funcionalidades do sistema.
 
